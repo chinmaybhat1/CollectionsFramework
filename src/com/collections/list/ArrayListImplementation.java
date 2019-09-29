@@ -11,14 +11,17 @@ public class ArrayListImplementation {
 	public static void main(String[] args) {
 
 		/*
-		 * Static array In a static array the size of the array is always fixed Example
-		 * -- int[] a = new int[2];
+		 * Static array -- In a static array the size of the array is always fixed 
+		 * Example -- int[] a = new int[10];
 		 */
+		
 
 		/*
 		 * Dynamic Array -- ArrayList
 		 * 
-		 * Can contain duplicate value/elements Maintains insertion order Synchronized
+		 * Can contain duplicate value/elements, 
+		 * Maintains insertion order, 
+		 * Synchronized,
 		 * Allows random access as it stores values on the basis of index
 		 */
 		List genericArrayList = new ArrayList();
@@ -85,7 +88,7 @@ public class ArrayListImplementation {
 		hiringCommittee.add(employee7);
 		
 		
-		// AddAll -- Adds one arraylist to another
+		//Add all -- Adds one array list to another
 		List<Employee> employeeList = new ArrayList<Employee>();
 		employeeList.addAll(developerList);
 		employeeList.addAll(testerList);
@@ -96,7 +99,7 @@ public class ArrayListImplementation {
 			+ ", email: " + employee.getEmployeeEmail() + ", role: " + employee.getRole());
 		}
 		
-		//Remove all -- removes element from given array list
+		//Remove all -- Removes element from given array list
 		employeeList.removeAll(culturalSquadList);
 		System.out.println("******* Employees not in Cultural squad ******");
 		for(Employee employee: employeeList) {
@@ -104,7 +107,7 @@ public class ArrayListImplementation {
 			+ ", email: " + employee.getEmployeeEmail() + ", role: " + employee.getRole());
 		}
 		
-		//Retain all -- retains the common elements in both array list
+		//Retain all -- Retains the common elements in both array list
 		employeeList.retainAll(hiringCommittee);
 		System.out.println("******* Employees in Hiring commitee but not in Cultural squad ******");
 		for(Employee employee: employeeList) {
